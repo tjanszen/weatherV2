@@ -9,6 +9,7 @@ html(lang='en')
     button#nsa My Weather
     .container
       .row#city.text-center
+      .row#monthDay.text-center
       .row#cond.text-center
       .row#currentTemp.text-center
       .row#forecast
@@ -17,6 +18,10 @@ html(lang='en')
           .col-xs-4.data#icon1.icon-image
           .col-xs-2.data#tHigh1.highs
           .col-xs-2.data#tLow1
+          .row.day#day1Hourly
+            .col-xs-4.hourlyHour
+            .col-xs-4.hourlyTemp
+            .col-xs-4.hourlyIcon
         .row.days
           .col-xs-4.data#day2
           .col-xs-4.data#icon2.icon-image

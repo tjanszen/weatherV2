@@ -16,9 +16,15 @@
   font-size:2.5em;
 }
 
+#monthDay{
+  width:400px;
+  font-size:1.2em;
+}
+
 #cond{
   width:400px;
   padding-top:10px;
+  font-size:1.2em;
 }
 
 #currentTemp{
@@ -29,11 +35,17 @@
 
 .days{
   width:400px;
+  height:60px;
   padding:10px 0 10px 40px;
   font-size:1.5em;
   margin: 0 auto;
   border-bottom: 1px solid #efa99b;
+  transition: height 0.5s ease;
 }
+
+// .days:first-child{
+//   height:150px;
+// }
 
 .data{
   padding: 10px 0;
@@ -44,6 +56,8 @@
   -moz-box-shadow: 0 8px 6px -6px black;
   box-shadow: 0 8px 6px -6px black;
   cursor: pointer;
+  height:150px;
+  transition: height 0.5s ease;
 }
 
 .icon-image{
