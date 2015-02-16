@@ -6,67 +6,21 @@ html(lang='en')
     link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css')
     link(rel='stylesheet', href='/style.css')
   body
-    button#nsa My Weather
+    #background
     .container
-      .row#city.text-center
-      .row#monthDay.text-center
-      .row#cond.text-center
-      .row#currentTemp.text-center
-      .row#forecast
-        .row.days
-          .col-xs-4.data#day1
-          .col-xs-4.data#icon1.icon-image
-          .col-xs-2.data#tHigh1.highs
-          .col-xs-2.data#tLow1
-          .row.day#day1Hourly
-            .col-xs-4.hourlyHour
-            .col-xs-4.hourlyTemp
-            .col-xs-4.hourlyIcon
-        .row.days
-          .col-xs-4.data#day2
-          .col-xs-4.data#icon2.icon-image
-          .col-xs-2.data#tHigh2.highs
-          .col-xs-2.data#tLow2
-        .row.days
-          .col-xs-4.data#day3
-          .col-xs-4.data#icon3.icon-image
-          .col-xs-2.data#tHigh3.highs
-          .col-xs-2.data#tLow3
-        .row.days
-          .col-xs-4.data#day4
-          .col-xs-4.data#icon4.icon-image
-          .col-xs-2.data#tHigh4.highs
-          .col-xs-2.data#tLow4
-        .row.days
-          .col-xs-4.data#day5
-          .col-xs-4.data#icon5.icon-image
-          .col-xs-2.data#tHigh5.highs
-          .col-xs-2.data#tLow5
-        .row.days
-          .col-xs-4.data#day6
-          .col-xs-4.data#icon6.icon-image
-          .col-xs-2.data#tHigh6.highs
-          .col-xs-2.data#tLow6
-        .row.days
-          .col-xs-4.data#day7
-          .col-xs-4.data#icon7.icon-image
-          .col-xs-2.data#tHigh7.highs
-          .col-xs-2.data#tLow7
-        .row.days
-          .col-xs-4.data#day8
-          .col-xs-4.data#icon8.icon-image
-          .col-xs-2.data#tHigh8.highs
-          .col-xs-2.data#tLow8
-        .row.days
-          .col-xs-4.data#day9
-          .col-xs-4.data#icon9.icon-image
-          .col-xs-2.data#tHigh9.highs
-          .col-xs-2.data#tLow9
-        .row.days
-          .col-xs-4.data#day10
-          .col-xs-4.data#icon10.icon-image
-          .col-xs-2.data#tHigh10.highs
-          .col-xs-2.data#tLow10
-    
+      .row#top
+        .col-xs-6.text-center#top-left
+          #current-temp 70&#176;
+        .col-xs-6.text-center#top-right
+          .row#location San Franscisco
+          .row#date Tuesday, Feb 16
+          .row#icon.text-center
+      .row#bottom
+        .col-xs-3.bottom-col
+        .col-xs-3.bottom-col
+        .col-xs-3.bottom-col
+        .col-xs-3.bottom-col
+        
+      
     script(src='/vendor/jquery/dist/jquery.js')
     script(src='/main.js')

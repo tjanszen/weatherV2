@@ -89,29 +89,29 @@ var state = ""
 }
 
 function addForecastData(dates, dayShorts, tempsHighF, tempsLowF, conds, icons, conditions, monthShort){
-  var count = 1;
-  for(var i = 0; i < 11; i++){
-    $('#day' + count).text(dayShorts[count-1]);
-    $('#icon' + count).css('background-image', 'url(' + icons[count-1] + ')');
-    $('#tHigh' + count).text(tempsHighF[count-1]);
-    $('#tLow' + count).text(tempsLowF[count-1]);
-    $('#day1').text('Today')
-
-    count+= 1;
-    if(count === 11){
-      count = 0;
-    }
-  }
-  $('#cond').text(conditions[0])
-  $('#monthDay').text(monthShort[0] + " " + dates[0]);
+  // var count = 1;
+  // for(var i = 0; i < 11; i++){
+  //   $('#day' + count).text(dayShorts[count-1]);
+  //   $('#icon' + count).css('background-image', 'url(' + icons[count-1] + ')');
+  //   $('#tHigh' + count).text(tempsHighF[count-1]);
+  //   $('#tLow' + count).text(tempsLowF[count-1]);
+  //   $('#day1').text('Today')
+  //
+  //   count+= 1;
+  //   if(count === 11){
+  //     count = 0;
+  //   }
+  // }
+  // $('#cond').text(conditions[0])
+  // $('#monthDay').text(monthShort[0] + " " + dates[0]);
 }
 
 function addCondData(feelsLike){
-  $('#currentTemp').text(Math.round(feelsLike));
+  // $('#currentTemp').text(Math.round(feelsLike));
 }
 
 function addCityData(city, state){
-  $('#city').text(city + ", " + state);
+  // $('#city').text(city + ", " + state);
 }
 
 function addHourlyData(hourlys){
