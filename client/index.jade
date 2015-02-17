@@ -4,23 +4,65 @@ html(lang='en')
     meta(charset='utf-8')
     title Weather 
     link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/vendor/weather-icons/css/weather-icons.css')
     link(rel='stylesheet', href='/style.css')
   body
     #background
     .container
       .row#top
-        .col-xs-6.text-center#top-left
+        .col-sm-6.col-xs-12.text-center#top-left
           #current-temp 70&#176;
-        .col-xs-6.text-center#top-right
-          .row#location San Franscisco
-          .row#date Tuesday, Feb 16
-          .row#icon.text-center
+        .col-sm-6.col-xs-12.text-center#top-right
+          .row#row-location
+            .col-xs-12#location San Franscisco
+          .row#row-date
+            .col-xs-12#date Mon, Feb 16
+          .row.text-center#row-icon
+            .col-xs-4
+            .col-xs-4#main-icon
+              i.wi.wi-day-sunny
+            .col-xs-4 
       .row#bottom
-        .col-xs-3.bottom-col
-        .col-xs-3.bottom-col
-        .col-xs-3.bottom-col
-        .col-xs-3.bottom-col
-        
-      
-    script(src='/vendor/jquery/dist/jquery.js')
-    script(src='/main.js')
+        .col-sm-3.col-xs-12.ind-days
+          .row.bottom-left
+            .col-xs-3.days Tues
+            .col-xs-3
+            .col-xs-6.his &#8593; 70&#176;
+          .row.bottom-right
+            .col-xs-3.icons
+              i.wi.wi-day-lightning
+            .col-xs-3
+            .col-xs-6.los &#8595; 50&#176;
+        .col-sm-3.col-xs-12.ind-days
+          .row.bottom-left
+            .col-xs-3.days Tues
+            .col-xs-3
+            .col-xs-6.his &#8593; 70&#176;
+          .row.bottom-right
+            .col-xs-3.icons
+              i.wi.wi-day-lightning
+            .col-xs-3
+            .col-xs-6.los &#8595; 50&#176;
+        .col-sm-3.col-xs-12.ind-days
+          .row.bottom-left
+            .col-xs-3.days Tues
+            .col-xs-3
+            .col-xs-6.his &#8593; 70&#176;
+          .row.bottom-right
+            .col-xs-3.icons
+              i.wi.wi-day-lightning
+            .col-xs-3
+            .col-xs-6.los &#8595; 50&#176;
+        .col-sm-3.col-xs-12.ind-days
+          .row.bottom-left
+            .col-xs-3.days Tues
+            .col-xs-3
+            .col-xs-6.his &#8593; 70&#176;
+          .row.bottom-right
+            .col-xs-3.icons
+              i.wi.wi-day-lightning
+            .col-xs-3
+            .col-xs-6.los &#8595; 50&#176;
+
+script(src='/vendor/jquery/dist/jquery.js')
+//- script(src='/main.js')
